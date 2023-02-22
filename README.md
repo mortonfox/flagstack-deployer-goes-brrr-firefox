@@ -1,12 +1,14 @@
-# Flagstack Deployer goes brrr
+# Flagstack Deployer goes brrr (Firefox version)
 
 ## Introduction
 
-The purpose of this Chrome extension is to add keyboard shortcuts to help you deploy green flags on the [Flagstack map page](https://www.flagstack.net/map). This makes the workflow a bit easier when you are deploying a lot of green flags on the map.
+The purpose of this Firefox extension is to add keyboard shortcuts to help you deploy green flags on the [Flagstack map page](https://www.flagstack.net/map). This makes the workflow a bit easier when you are deploying a lot of green flags on the map.
 
 Note: You need a premium membership to deploy green flags via the website map.
 
 ## Installation
+
+The following is not relevant to Firefox. One would have to run ``web-ext build``, submit it to Mozilla Add-ons, and wait for approval. Then install it from there.
 
 git clone this repository to your local disk or download the zip file and extract.
 
@@ -22,4 +24,4 @@ On the Flagstack map page, hit <kbd>Alt-G</kbd> and then <kbd>Enter</kbd> to ini
 
 Move the flag into position.
 
-Finally, hit <kbd>Alt-B</kbd> to "click" on the save button to complete the flag deploy.
+Finally, hit <kbd>Alt-R</kbd> to "click" on the save button to complete the flag deploy.
