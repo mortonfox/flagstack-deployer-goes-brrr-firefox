@@ -1,17 +1,17 @@
 async function getCurrentTabId() {
-    let queryOptions = {
-        active: true,
-        currentWindow: true
-    };
-    let [tab] = await browser.tabs.query(queryOptions);
-    return tab.id;
+  let queryOptions = {
+    active: true,
+    currentWindow: true
+  };
+  let [tab] = await browser.tabs.query(queryOptions);
+  return tab.id;
 }
 
-chrome.commands.onCommand.addListener(async command => {
+browser.commands.onCommand.addListener(async command => {
   console.log(command);
   let tabid = await getCurrentTabId();
   // console.log(tabid);
-  chrome.scripting.executeScript({
+  browser.scripting.executeScript({
     target: {tabId: tabid},
     func: contentScriptFunc,
     args: [command]
